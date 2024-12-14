@@ -25,12 +25,13 @@ Boolean value that determines whether the sheet attaches to the bottom edge of t
 @State var isPresented: SheetDisplay = .dismissed(nil)
 
 ...
+
 Button {
     // Present Action
     isPresented = .displayed
 } label: {
     Text("I'm a button")
-}.sheet($isPresented, detents: [.medium(), .large()]) {
+}.adaptiveSheet($isPresented, detents: [.medium(), .large()]) {
     Button {
         // Dismiss Action
         isPresented = .dismissed {
