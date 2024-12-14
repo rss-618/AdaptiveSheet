@@ -24,6 +24,10 @@ A completion that executes only when the sheet is dismiss through non-code initi
 
 ## Example
 ```
+import AdaptiveSheet
+
+...
+
 @State var isPresented: SheetDisplay = .dismissed(nil)
 
 ...
