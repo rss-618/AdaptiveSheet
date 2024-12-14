@@ -19,6 +19,8 @@ Determines whether we have a transparent background or not
 Boolean that determines whether not a nested scroll view will impact sheet movement
 ### Prefers Edge Attached in CompactHeight
 Boolean value that determines whether the sheet attaches to the bottom edge of the screen in a compact-height size class
+### Organic Dismissal
+A completion that executes only when the sheet is dismiss through non-code initiated means. eg.) a user swipes down on the sheet or taps the area behind the sheet if undimmed setting is off where it is dimmed.
 
 ## Example
 ```
